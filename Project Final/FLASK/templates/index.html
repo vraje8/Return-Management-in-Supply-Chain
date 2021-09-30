@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Starter Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./static/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="./static/css2/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+  <nav class="light-blue lighten-1" role="navigation">
+    
+
+  </nav>
+
+
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">Return Management In Supply Chain Stratergy</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Predict the probability if the Order will be returned
+        <br>
+        </h5>
+      </div>
+
+              <div class="row">
+    <form action='/predict' method="post" class="col s12">
+      <div class="row">
+        <div class="input-field col s4">
+            <label for="first_name"><b>Package ID</b></label>
+            <br>
+          <input placeholder="Package ID" name="PackageID" id="first_name" type="text" class="validate">
+        </div>
+        <div class="input-field col s4">
+
+          <label for="last_name"><b>Category</b></label>
+            <br>
+          <input id="last_name" name="Category" placeholder="Category"  type="text" class="validate">
+
+        </div>
+
+        <div class="input-field col s4">
+            <label for="_name"><b>Total Price</b></label>
+            <br>
+          <input id="_name" name="TotalPrice" placeholder="Total Price" type="text" class="validate">
+
+        </div>
+        <div class="input-field col s4">
+            <label for="_name"><b>District</b></label>
+            <br>
+          <input id="_name" name="District" placeholder="District" type="text" class="validate">
+
+        </div>
+        <div class="input-field col s4">
+            <label for="_name"><b>Taluka</b></label>
+            <br>
+          <input id="_name" name="Taluka" placeholder="Taluka" type="text" class="validate">
+
+        </div>
+        <div class="input-field col s4">
+            <label for="_name"><b>Shipper</b></label>
+            <br>
+          <input id="_name" name="Shipper" placeholder="Shipper" type="text" class="validate">
+
+        </div>   
+        <div class="input-field col s4">
+            <label for="_name"><b>Source</b></label>
+            <br>
+          <input id="_name" name="Source" placeholder="Source" type="text" class="validate">
+
+        </div>  
+        <div class="input-field col s4">
+            <label for="_name"><b>Gujrat</b></label>
+            <br>
+          <input id="_name" name="State_GJ" placeholder="0" type="text" class="validate">
+
+        </div>   
+        <div class="input-field col s4">
+            <label for="_name"><b>Maharashtra</b></label>
+            <br>
+          <input id="_name" name="State_MH" placeholder="0" type="text" class="validate">
+
+        </div>   
+        <div class="input-field col s4">
+            <label for="_name"><b>Madhya Pradesh</b></label>
+            <br>
+          <input id="_name" name="State_MP" placeholder="0" type="text" class="validate">
+
+        </div>   
+        <div class="input-field col s4">
+            <label for="_name"><b>Rajasthan</b></label>
+            <br>
+          <input id="_name" name="State_RJ" placeholder="0" type="text" class="validate">
+
+        </div>   
+        <div class="input-field col s4">
+            <label for="_name"><b>Uttar Pradesh</b></label>
+            <br>
+          <input id="_name" name="State_UP" placeholder="0" type="text" class="validate">
+
+        </div>                
+      </div>
+
+      <div class="row center">
+
+          <button type="submit" class="btn-large waves-effect waves-light orange">Predict Probability</button>
+      </div>
+    </form>
+      </div>
+
+      <br>
+        {{pred}}<br>
+
+    </div>
+  </div>
+
+
+    <br><br>
+  </div>
+  </div>>
+
+ 
+
+
+  <!--  Scripts-->
+  <!-- <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src=".js/materialize.js"></script>
+  <script src="js/init.js"></script>-->
+
+
+  </body>
+</html>
+
