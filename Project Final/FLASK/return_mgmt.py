@@ -9,7 +9,7 @@ import pickle
 warnings.filterwarnings("ignore")
 
 '#Read File'
-supply_chain_dataset= pd.read_csv('C:/Users/VishalR/Desktop/CDACClassW/Project/AgrStaar/new/Processed.csv')
+supply_chain_dataset= pd.read_csv('Processed.csv')
 
 '# Data Preparation'
 supply_chain_dataset = supply_chain_dataset.drop('DeliveryStatus',axis=1)
